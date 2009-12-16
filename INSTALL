@@ -1,0 +1,10 @@
+Thank you for downloading the Silverstripe CompactNavigator module.
+
+Currently maintained by Mo.
+
+Install Instructions:
+ 1) Upload the Silverstripe CompactNavigator module to the "compactnavigator" folder in your
+    SilverStripe root folder
+ 2) Add $SSCompactNavigator to your page template. Ideally either after <body>
+    or before </body>
+ 3) Run dev/build?flush=1
