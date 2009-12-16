@@ -1,0 +1,53 @@
+#CN_ShowHide {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 35px;
+	height: 35px;
+	z-index: 99;
+	cursor: pointer;
+	background: #474855;
+}
+#CN_ShowHide img {
+	margin: 5px;
+}
+
+
+#CN_CompactNavigator {
+	text-align: left;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #474855;
+	width: 130px;
+	padding: 10px;
+}
+
+#CN_CompactNavigator p,
+#CN_CompactNavigator li {
+	color: #fff;
+	font-size: 8pt;
+}
+#CN_CompactNavigator a {
+	color: #ccc;
+}
+#CN_CompactNavigator a:hover {
+	color: #fff;
+}
+
+#CN_CompactNavigator #CN_PageType {
+	font-weight: bold;
+	font-size: 10pt;
+	margin: 0 0 1.5em 0;
+}
+
+#CN_CompactNavigator #CN_SwitchView {
+	list-style: none;
+	margin: 0 0 1.5em 0;
+	padding: 0;
+}
+
+#CN_CompactNavigator #CN_Credentials {
+	margin: 0;
+}
