@@ -1,18 +1,25 @@
 <?php
 /**
- * SSNController adds a new method to Content Controller, this replaces the default Silverstripe
- * Navigator. Instead of hard codede links, SSNavigator should allow URL's in the navigator to
- * be altered a bit more easily and should allow for custom templating within the users
- * Templates folder.
+ * CompactNavigator adds a new method to Content Controller, this can be used instead of the
+ * default Silverstripe Navigator. It is a lot more compact, obscuring very little of your site
+ * and also works correctly in IE6.
  * 
- * To add The new navigator bar, add $SSNavigator to your template, in place of the traditional
- * $Silverstripenavigator
+ * CompactNavigator uses a template called CompactNavigator.ss that can be overwritten in your
+ * theme, if you require a customised layout.
+ * 
+ * To add CompactNavigation to your template, you need to add $SSCompactNavigator to your
+ * template. Ideally either:
+ * 
+ * After your <body> tag or
+ * Before your </body> tag
+ * 
+ * @todo add check for user generated styles or javascript, and if they exist, load them instead.
  */
 class CompactNavigator extends Extension {
 	protected $dataRecord;
 	
 	/**
-	 * @var $adminLink Link to the main admin area 
+	 * @var $adminLink Link to the main admin area
 	 */
 	static $adminLink = 'admin';
 
