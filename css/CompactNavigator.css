@@ -9,7 +9,7 @@
 	cursor: pointer;
 	background: #474855 url("../images/top-bg.gif") repeat-x 0 0;
 	border-bottom-left-radius: 10px;
-	-moz-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
 	-webkit-border-bottom-left-radius:10px;
 	-khtml-border-bottom-left-radius:10px;
 }
@@ -26,7 +26,7 @@
 	width: 130px;
 	padding: 10px;
 	border-bottom-left-radius: 10px;
-	-moz-border-bottom-left-radius:10px;
+	-moz-border-radius-bottomleft:10px;
 	-webkit-border-bottom-left-radius:10px;
 	-khtml-border-bottom-left-radius:10px;
 }
