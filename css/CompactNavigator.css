@@ -12,12 +12,10 @@
 	-moz-border-bottom-left-radius:10px;
 	-webkit-border-bottom-left-radius:10px;
 	-khtml-border-bottom-left-radius:10px;
-	behavior: url(../css/border-radius.htc);
 }
 #CN_ShowHide img {
 	margin: 5px;
 }
-
 
 #CN_CompactNavigator {
 	text-align: left;
@@ -31,7 +29,6 @@
 	-moz-border-bottom-left-radius:10px;
 	-webkit-border-bottom-left-radius:10px;
 	-khtml-border-bottom-left-radius:10px;
-	behavior: url(../css/border-radius.htc);
 }
 
 #CN_CompactNavigator p,
