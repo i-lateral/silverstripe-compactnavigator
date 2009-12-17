@@ -8,6 +8,7 @@
 	z-index: 99;
 	cursor: pointer;
 	background: #474855 url("../images/top-bg.gif") repeat-x 0 0;
+	border-bottom-left-radius: 10px;
 }
 #CN_ShowHide img {
 	margin: 5px;
@@ -22,6 +23,7 @@
 	background: #474855 url("../images/top-bg.gif") repeat-x 0 0;
 	width: 130px;
 	padding: 10px;
+	border-bottom-left-radius: 10px;
 }
 
 #CN_CompactNavigator p,
