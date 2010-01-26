@@ -39,4 +39,4 @@
 	</div>
 </div>
 
-<div id="CN_ShowHide"><img src="compactnavigator/images/silverstripelogo.png" /></div>
+<div id="CN_ShowHide"><img src="compactnavigator/images/silverstripelogo.png" alt=" " /></div>
