@@ -16,14 +16,14 @@
 			<li><a href="$cmsLink/$ID" target="cms">Edit this Page</a></li>
 			
 			<% if DisplayMode == Stage %>
-			<li><a target="site" style="left : -1px;" href="$Link?stage=Live">View Published Site</a></li>
+			<li><a style="left : -1px;" href="$Link?stage=Live">View Published Site</a></li>
 			
 			<% else_if DisplayMode == Live %>
-			<li><a target="site" style="left : -1px;" href="$Link?stage=Stage">View Draft Site</a></li>
+			<li><a style="left : -1px;" href="$Link?stage=Stage">View Draft Site</a></li>
 			
 			<% else_if DisplayMode == Archived %>
-			<li><a target="site" style="left : -1px;" href="$Link?stage=Stage">View Draft Site</a></li>
-			<li><a target="site" style="left : -1px;" href="$Link?stage=Live">View Published Site</a></li>
+			<li><a style="left : -1px;" href="$Link?stage=Stage">View Draft Site</a></li>
+			<li><a style="left : -1px;" href="$Link?stage=Live">View Published Site</a></li>
 			
 			<% end_if %>
 		</ul>
