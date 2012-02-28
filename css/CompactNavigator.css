@@ -5,7 +5,7 @@
 	display: block;
 	width: 35px;
 	height: 35px;
-	z-index: 99;
+	z-index: 999;
 	cursor: pointer;
 	background: #474855 url("../images/top-bg.gif") repeat-x 0 0;
 	border-bottom-left-radius: 10px;
@@ -18,17 +18,19 @@
 }
 
 #CN_CompactNavigator {
-	text-align: left;
-	position: absolute;
-	top: 0;
-	right: 0;
-	background: #474855 url("../images/top-bg.gif") repeat-x 0 0;
-	width: 130px;
-	padding: 10px;
-	border-bottom-left-radius: 10px;
-	-moz-border-radius-bottomleft:10px;
-	-webkit-border-bottom-left-radius:10px;
-	-khtml-border-bottom-left-radius:10px;
+    font-family: arial, sans-serif, serif;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 998;
+    background: #474855 url("../images/top-bg.gif") repeat-x 0 0;
+    width: 130px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft:10px;
+    -webkit-border-bottom-left-radius:10px;
+    -khtml-border-bottom-left-radius:10px;
 }
 
 #CN_CompactNavigator p,
