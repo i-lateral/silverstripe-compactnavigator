@@ -67,7 +67,7 @@ class CompactNavigator extends Extension {
 			else
 				Requirements::javascript('compactnavigator/scripts/CompactNavigator.js');
 
-			$this->owner->cmsLink	= self::$adminLink."/".CMSMain::$url_segment."/show";
+			$this->owner->cmsLink	= self::$adminLink."/".CMSMain::$url_segment."/edit/show";
 			$this->owner->adminLink	= self::$adminLink;
 
 			if($date = Versioned::current_archived_date()) {
