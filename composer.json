@@ -1,0 +1,23 @@
+{
+  "name": "i-lateral/silverstripe-compactnavigator",
+  "description": "A Silverstripe module that adds a simple, themable admin menu to the front end of a site (when you are logged in)",
+  "type": "silverstripe-module",
+	"homepage": "http://github.com/i-lateral/silverstripe-compactnavigator",
+	"keywords": ["silverstripe", "admin", "menu"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Morven Lewis-Everley",
+			"email": "morven@i-lateral.com"
+		}
+	],
+	"support": {
+		"issues": "http://github.com/i-lateral/silverstripe-compactnavigator/issues"
+	},
+	"require": {
+		"silverstripe/framework": ">=3.0"
+	},
+	"extra": {
+		"installer-name": "compactnavigator"
+	}
+}
