@@ -15,7 +15,7 @@
 		"issues": "http://github.com/i-lateral/silverstripe-compactnavigator/issues"
 	},
 	"require": {
-		"silverstripe/framework": ">=3.0"
+		"silverstripe/framework": ">=3.0",
 		"silverstripe/cms": ">=3.0"
 	},
 	"extra": {
