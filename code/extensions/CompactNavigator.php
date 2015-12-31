@@ -15,7 +15,8 @@
  *
  * @todo add check for user generated styles or javascript, and if they exist, load them instead.
  */
-class CompactNavigator extends Extension {
+class CompactNavigator extends Extension
+{
     protected $dataRecord;
 
     /**
@@ -53,21 +54,24 @@ class CompactNavigator extends Extension {
      * if third party templates have been specified. If so, it loads them, and provides them with the required
      * variables. If not, it loads the defaults instead.
      */
-    public function SSCompactNavigator() {
-        if(Director::isDev() || Permission::check('CMS_ACCESS_CMSMain')) {
+    public function SSCompactNavigator()
+    {
+        if (Director::isDev() || Permission::check('CMS_ACCESS_CMSMain')) {
             $RenderTemplate = (isset(CompactNavigator::$Template)) ? CompactNavigator::$Template : $this->class;
 
-            if(isset(CompactNavigator::$CssTheme))
+            if (isset(CompactNavigator::$CssTheme)) {
                 Requirements::css(CompactNavigator::$CssTheme);
-            else
+            } else {
                 Requirements::css('compactnavigator/css/CompactNavigator.css');
+            }
 
-            if(isset(CompactNavigator::$JsTheme))
+            if (isset(CompactNavigator::$JsTheme)) {
                 Requirements::javascript(CompactNavigator::$JsTheme);
-            else
+            } else {
                 Requirements::javascript('compactnavigator/scripts/CompactNavigator.js');
+            }
 
-            if(class_exists("CMSMain")) {
+            if (class_exists("CMSMain")) {
                 $this->owner->cmsLink   = Controller::join_links(
                     singleton("CMSMain")->Link("edit"),
                     "show"
@@ -76,11 +80,12 @@ class CompactNavigator extends Extension {
 
             $this->owner->adminLink = self::$adminLink;
 
-            if($date = Versioned::current_archived_date()) {
+            if ($date = Versioned::current_archived_date()) {
                 $this->owner->DisplayMode ='Archived';
                 $this->owner->ArDate = Object::create('Datetime', $date, null);
-            } else
+            } else {
                 $this->owner->DisplayMode = Versioned::current_stage();
+            }
 
             return $this->owner->renderWith(array(
                 $RenderTemplate,
@@ -89,4 +94,3 @@ class CompactNavigator extends Extension {
         }
     }
 }
-?>
