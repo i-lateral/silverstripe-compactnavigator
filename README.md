@@ -18,7 +18,15 @@ Or alternativly add to your projects composer.json
 
 ## Usage
 Once installed, simply add the template variable $SSCompactNavigator to your Page
-master template (preaferable just after the <bodv> tag).
+master template (preaferable just after the opening body tag), EG:
+
+    <head>
+    ...
+    </head>
+    <body>
+        $SSCompactNavigator
+        ...
+    </body>
 
 If you are in development mode, then the menu will appear at all times in your
 templates.
